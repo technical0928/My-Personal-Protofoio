@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="font-poppins">
+    <!-- header -->
+    <div class="navbar">
+        <div class="logo">
+            <h1 class="text-2xl sm:text-3xl md:text-3xl sm:text-textbase font-bold cursor-pointer">
+                Abdur<span class="text-indigo-400">Rehman</span>
+            </h1>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#about" class="text-sm md:text-base">About</a></li>
+                <li><a href="#skill" class="text-sm md:text-base">Skill</a></li>
+                <li><a href="#project" class="text-sm md:text-base">Project</a></li>
+                <li><a href="#contact" class="text-sm md:text-base">Contact</a></li>
+            </ul>
+        </div>
+        <div class="nav-end flex gap-[20px]">
+            <img src="direction.png" id="togl" class="toggle h-[30px]" alt="toggle">
+            <a href="https://drive.google.com/file/d/13pufXmM5CggR3krVdI9uifg56CmZNH64/view?usp=drive_link">
+                <button
+                    class="resume z-50 cursor-pointer bg-gradient-to-r from-purple-500 to-indigo-600 px-6 py-2 rounded-lg flex items-center gap-2 hover:scale-105 transition-transform duration-300 font-medium text-sm md:text-base shadow-lg hover:shadow-purple-500/25">
+                    <img src="apps.png">
+                    <a href="">
+                        Resume
+                </button>
+            </a>
+
+        </div>
+    </div>
+
+    <!-- hero-section -->
+    <div class="hero-section">
+        <div class="hero-section-content">
+            <h1 class="text-2xl md:text-4xl font-normal">Hi, I'm a</h1>
+            <h1 class="text-4xl md:text-6xl font-bold mt-4">Fronted <span class="text-indigo-400">Developer</span></h1>
+            <p class="para-one mt-4 text-sm md:text-base">A passionate <span
+                    class="text-indigo-400 font-semibold">Frontend Developer</span>
+                with <span class="text-indigo-400 font-semibold">1+ years</span> of experience crafting interactive and
+                responsive web interfaces.</p>
+            <p class="para-two mt-4 text-sm md:text-base">Skilled in React.js, Tailwind CSS, and modern JavaScript to
+                build smooth, scalable,
+                and user-friendly applications.</p>
+            <div class="flex flex-wrap justify-center gap-4 mt-2 sm:gap-8 mb-6 sm:mb-8">
+                <div
+                    class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-3 sm:p-4 min-w-[100px] border border-gray-700/50">
+                    <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-indigo-400">10+</h2>
+                    <p class="text-xs sm:text-sm text-gray-400 mt-1">Projects</p>
+                </div>
+                <div
+                    class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-3 sm:p-4 min-w-[100px] border border-gray-700/50">
+                    <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-indigo-400">90%</h2>
+                    <p class="text-xs sm:text-sm text-gray-400 mt-1">Satisfaction</p>
+                </div>
+                <div
+                    class="bg-gray-800/30 backdrop-blur-sm rounded-lg p-3 sm:p-4 min-w-[100px] border border-gray-700/50">
+                    <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-indigo-400">24h</h2>
+                    <p class="text-xs sm:text-sm text-gray-400 mt-1">Response</p>
+                </div>
+
+            </div>
+            <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-6 sm:mb-8"><button class="bg-gradient-to-r from-purple-500 to-indigo-600 px-6 sm:px-8 py-3 rounded-full
+                       font-semibold hover:scale-105 transition-transform text-sm sm:text-base cursor-pointer">View My
+                    Work</button></div>
+            <div class="flex gap-4 sm:gap-6 text-xl sm:text-2xl">
+                <a href="https://technical0928.github.io/My-tasks/" target="_blank" class="border border-indigo-400 p-2 sm:p-3 rounded-full
+                         text-indigo-400 hover:text-white
+                         hover:bg-gradient-to-r from-purple-500 to-indigo-600
+                         transition-all duration-300 transform hover:scale-110 hover:shadow-lg">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="#" target="_blank" class="border border-indigo-400 p-2 sm:p-3 rounded-full
+                         text-indigo-400 hover:text-white
+                         hover:bg-gradient-to-r from-purple-500 to-indigo-600
+                         transition-all duration-300 transform hover:scale-110 hover:shadow-lg">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://wa.me/03449762513" target="_blank" class="border border-indigo-400 p-2 sm:p-3 rounded-full
+                         text-indigo-400 hover:text-white
+                         hover:bg-gradient-to-r from-purple-500 to-indigo-600
+                         transition-all duration-300 transform hover:scale-110 hover:shadow-lg">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- about-section -->
+    <section id="about" class="min-h-screen flex flex-col justify-center items-center px-4 py-16
+                 bg-gradient-to-b  bg-[#08152b] text-white">
+        <div
+            class="w-full max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0">
+            <div class="md:w-1/3 flex justify-center relative">
+                <div class="absolute inset-0 w-48 h-48 md:w-64 md:h-64 rounded-full 
+                        bg-indigo-500 blur-2xl opacity-30 "></div><img alt="Shah Fahad - Frontend Developer" class="relative w-48 h-48 md:w-64 md:h-64 rounded-full 
+                       border-4 border-indigo-400 shadow-[0_0_25px_rgba(79,70,229,0.6)] 
+                       object-cover" src="my image.jpg">
+            </div>
+            <div class="hidden md:flex justify-center items-center mx-8">
+                <div class="w-1 h-64 bg-gradient-to-b from-purple-500 to-indigo-600"></div>
+            </div>
+            <div class="md:hidden w-40 h-1 flex justify-center">
+                <div class="w-full h-1 bg-gradient-to-r from-purple-500 to-indigo-600"
+                    style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); transform-origin: 0% 50%;">
+                </div>
+            </div>
+            <div class="md:w-2/3 text-center md:text-left px-4"
+                style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                <h2 class="text-3xl sm:text-4xl font-bold text-indigo-400 mb-4 sm:mb-6">About Me</h2>
+                <p class="text-gray-300 text-lg sm:text-xl mb-6 leading-relaxed">Frontend Developer focused on creating
+                    seamless, responsive, and visually appealing user experiences.</p>
+                <h3 class="text-2xl sm:text-3xl font-semibold mb-4 sm:mb-6 text-white">The Developer Behind the Design
+                </h3>
+                <div class="space-y-4 sm:space-y-6">
+                    <p class="text-gray-300 text-base sm:text-lg leading-relaxed">I'm <span
+                            class="text-indigo-400 font-medium">Shah Fahad</span>, a passionate Frontend Developer with
+                        <span class="text-indigo-400 font-medium">1+ years</span> of experience building modern and
+                        interactive web applications. My focus is on writing scalable, maintainable code while paying
+                        close attention to design detail and performance. Beyond coding, I'm constantly learning and
+                        exploring new technologies to improve my craft.
+                    </p>
+                    <p class="text-gray-300 text-base sm:text-lg leading-relaxed"></p>
+                    <p class="text-gray-300 text-base sm:text-lg leading-relaxed"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- about-section -->
+    <div class="text-center mb-16 mt-5" id="skill">
+        <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">Technical <span
+                class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">Skills</span></h2>
+        <div class="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-400 mx-auto mb-4"></div>
+        <p class="text-gray-400 max-w-2xl mx-auto text-lg">Here are the technologies and tools I use to bring ideas to
+            life. I'm passionate about learning new technologies and improving my skills.</p>
+    </div>
+    <!-- first skill card -->
+    <div class="skill-cards">
+        <div class="skills-one skills p-3 bg-gray-800/50 backdrop-blur-sm">
+            <!-- inner card 1 -->
+            <div class="inner-card flex items-center gap-4 ">
+                <i
+                    class="fa-solid fa-code text-white text-lg text-white p-[5px] bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg "></i>
+                <h2 class="text-2xl font-semibold">Fronted Developer</h2>
+
+            </div>
+            <!-- inner card 2 -->
+            <div class="inner-card">
+                <div class="html flex justify-between ">
+                    <div class="icons flex gap-2 items-center">
+                        <i
+                            class="fa-brands fa-html5 text-orange-400 text-xl text-white p-1 bg-[#ff6a00] rounded-lg "></i>
+                        <h2 class="text-xl font-semibold">HTML 5</h2>
+
+                    </div>
+
+                    <p class="text-[#818cf8] font-semibold mt-1">95%</p>
+                </div>
+                <div class="percent bg-gray-700">
+                    <div class="inner-percent bg-gradient-to-r from-orange-500"></div>
+                </div>
+                <div class="percent-content flex justify-between text-[12px] mt-1 ">
+                    <span>Beginner</span>
+                    <span>Intermediate</span>
+                    <span>Advanced</span>
+                    <span>Expert</span>
+                </div>
+
+            </div>
+            <!-- inner-card 33 -->
+            <div class="inner-card">
+                <div class="html flex justify-between ">
+                    <div class="icons flex gap-2 items-center">
+                        <i
+                            class="fa-brands fa-css3-alt text-blue-400 text-white text-xl p-1 bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg "></i>
+                        <h2 class="text-xl font-semibold">CSS</h2>
+
+                    </div>
+                    <p class="text-[#818cf8] font-semibold mt-1">90%</p>
+                </div>
+                <div class="percent bg-gray-700">
+                    <div class="inner-percent bg-gradient-to-r from-blue-500 to-blue-600 w-[90%]"></div>
+                </div>
+                <div class="percent-content flex justify-between text-[12px] mt-1 ">
+                    <span>Beginner</span>
+                    <span>Intermediate</span>
+                    <span>Advanced</span>
+                    <span>Expert</span>
+                </div>
+
+            </div>
+            <!-- inner card 3 -->
+            <div class="inner-card">
+                <div class="html flex justify-between ">
+                    <div class="icons flex gap-2 items-center">
+                        <i
+                            class="fa-brands fa-js text-xl text-white p-1 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-lg "></i>
+                        <h2 class="text-xl font-semibold">JavaScript</h2>
+
+                    </div>
+                    <p class="text-[#818cf8] font-semibold mt-1">90%</p>
+                </div>
+                <div class="percent bg-gray-700">
+                    <div class="inner-percent bg-gradient-to-r from-yellow-400 to-yellow-500 w-[80%]"></div>
+                </div>
+                <div class="percent-content flex justify-between text-[12px] mt-1 ">
+                    <span>Beginner</span>
+                    <span>Intermediate</span>
+                    <span>Advanced</span>
+                    <span>Expert</span>
+                </div>
+
+            </div>
+            <!-- inner card 4 -->
+
+            <div class="inner-card">
+                <div class="html flex justify-between ">
+                    <div class="icons flex gap-2 items-center">
+                        <i
+                            class="fa-solid fa-wind text-xl text-white p-1 bg-gradient-to-r from-teal-400 to-cyan-500 rounded-lg "></i>
+                        <h2 class="text-xl font-semibold">Tailwind CSS</h2>
+
+                    </div>
+                    <p class="text-[#818cf8] font-semibold mt-1">90%</p>
+                </div>
+                <div class="percent bg-gray-700">
+                    <div class="inner-percent bg-gradient-to-r from-teal-400 to-cyan-500 w-[88%]"></div>
+                </div>
+                <div class="percent-content flex justify-between text-[12px] mt-1 ">
+                    <span>Beginner</span>
+                    <span>Intermediate</span>
+                    <span>Advanced</span>
+                    <span>Expert</span>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- second skill card -->
+        <div class="skills-one skills p-3 bg-gray-800/50 backdrop-blur-sm">
+            <!-- inner card 1 -->
+            <div class="inner-card flex items-center gap-4 ">
+                <i
+                    class="fa-solid fa-screwdriver-wrench text-xl text-white p-[5px] bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg "></i>
+                <h2 class="text-2xl font-semibold">Tools & Tools</h2>
+
+            </div>
+            <!-- inner card 2 -->
+            <div class="inner-card">
+                <div class="html flex justify-between ">
+                    <div class="icons flex gap-2 items-center">
+                        <i
+                            class="fa-brands fa-github text-xl text-white p-1 bg-gradient-to-r from-red-500 to-pink-500 rounded-lg "></i>
+                        <h2 class="text-xl font-semibold">Github</h2>
+
+                    </div>
+
+                    <p class="text-[#818cf8] font-semibold mt-1">95%</p>
+                </div>
+                <div class="percent bg-gray-700">
+                    <div class="inner-percent bg-gradient-to-r from-red-500 to-pink-500"></div>
+                </div>
+                <div class="percent-content flex justify-between text-[12px] mt-1 ">
+                    <span>Beginner</span>
+                    <span>Intermediate</span>
+                    <span>Advanced</span>
+                    <span>Expert</span>
+                </div>
+
+            </div>
+            <!-- inner-card 33 -->
+            <div class="inner-card">
+                <div class="html flex justify-between ">
+                    <div class="icons flex gap-2 items-center">
+                        <i
+                            class="fa-solid fa-mobile-screen text-xl text-white p-1 bg-gradient-to-r from-green-500 to-emerald-500 rounded-lg "></i>
+                        <h2 class="text-xl font-semibold">Mobile & Response</h2>
+
+                    </div>
+                    <p class="text-[#818cf8] font-semibold mt-1">90%</p>
+                </div>
+                <div class="percent bg-gray-700">
+                    <div class="inner-percent bg-gradient-to-r from-green-500 to-emerald-500 w-[90%]"></div>
+                </div>
+                <div class="percent-content flex justify-between text-[12px] mt-1 ">
+                    <span>Beginner</span>
+                    <span>Intermediate</span>
+                    <span>Advanced</span>
+                    <span>Expert</span>
+                </div>
+
+            </div>
+            <!-- inner card 3 -->
+            <div class="inner-card">
+                <div class="html flex justify-between ">
+                    <div class="icons flex gap-2 items-center">
+                        <i
+                            class="fa-solid fa-database text-xl text-white p-1 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg "></i>
+                        <h2 class="text-xl font-semibold">Database & API</h2>
+
+                    </div>
+                    <p class="text-[#818cf8] font-semibold mt-1">90%</p>
+                </div>
+                <div class="percent bg-gray-700">
+                    <div class="inner-percent bg-gradient-to-r from-cyan-500 to-blue-500 w-[60%]"></div>
+                </div>
+                <div class="percent-content flex justify-between text-[12px] mt-1 ">
+                    <span>Beginner</span>
+                    <span>Intermediate</span>
+                    <span>Advanced</span>
+                    <span>Expert</span>
+                </div>
+
+            </div>
+            <!-- inner card 4 -->
+
+            <div class="inner-card">
+                <div class="html flex justify-between ">
+                    <div class="icons flex gap-2 items-center">
+                        <i
+                            class="fa-solid fa-code text-xl text-white p-1 bg-gradient-to-r from-violet-500 to-purple-500 rounded-lg "></i>
+                        <h2 class="text-xl font-semibold">Tailwind CSS</h2>
+
+                    </div>
+                    <p class="text-[#818cf8] font-semibold mt-1">90%</p>
+                </div>
+                <div class="percent bg-gray-700">
+                    <div class="inner-percent bg-gradient-to-r from-violet-500 to-purple-500 w-[88%]"></div>
+                </div>
+                <div class="percent-content flex justify-between text-[12px] mt-1 ">
+                    <span>Beginner</span>
+                    <span>Intermediate</span>
+                    <span>Advanced</span>
+                    <span>Expert</span>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- projectss-section -->
+    <div class="text-center mt-12" style="opacity: 1; transform: none;" id="project">
+        <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">Featured <span
+                class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">Projects</span></h2>
+        <div class="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-400 mx-auto mb-6"></div>
+        <p class="text-gray-400 max-w-2xl mx-auto text-lg">A showcase of my recent work across different technologies
+            and domains</p>
+    </div>
+
+
+    <!-- projects-cards -->
+    <div class="projects-cards-section">
+        <div class="project-card procard">
+            <div class="pro-picture">
+                <img src="my-website.png" class="my-website" alt="my-website">
+            </div>
+            <div class="pro-content">
+                <h1 class="text-white ml-2 mt-2 font-semibold text-xl">Ecommerse Website</h1>
+
+                <p class="text-white p-2 text-[14px] opacity-80">A responsive e-commerce web application for mobile
+                    gadgets built with React.js, Tailwind CSS, and Redux. It features dynamic product listing, cart
+                    management using Local Storage, and a smooth, interactive UI for browsing, adding, and managing
+                    products. Frontend-only project with real-time state management and polished design.</p>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>tailwind css</span>
+                <span>JavaScript</span>
+            </div>
+            <div class="pro-btns">
+                <button class="one">
+                    <img src="external-link.png">
+                    <a href="https://technical0928.github.io/Ecommerse-website/" target="_blank">Live Demo</a>
+                </button>
+                <button class="two">
+                    <i class="fa-brands fa-github"></i>
+                    Code
+                </button>
+            </div>
+        </div>
+        <div class="project-card procard">
+            <div class="pro-picture">
+                <img src="Ecommerse.png" class="my-website" alt="my-website">
+            </div>
+            <div class="pro-content">
+                <h1 class="text-white ml-2 mt-2 font-semibold text-xl">Learning Website</h1>
+
+                <p class="text-white p-2 text-[14px] opacity-80">A responsive e-commerce web application for mobile
+                    gadgets built with React.js, Tailwind CSS, and Redux. It features dynamic product listing, cart
+                    management using Local Storage, and a smooth, interactive UI for browsing, adding, and managing
+                    products. Frontend-only project with real-time state management and polished design.</p>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>tailwind css</span>
+                <span>JavaScript</span>
+            </div>
+            <div class="pro-btns">
+                <button class="one">
+                    <img src="external-link.png">
+                    <a href="https://technical0928.github.io/Abdur-Rehman/#about" target="_blank">Live Demo</a>
+                </button>
+                <button class="two">
+                    <i class="fa-brands fa-github"></i>
+                    Code
+                </button>
+            </div>
+        </div>
+        <div class="project-card procard">
+            <div class="pro-picture">
+                <img src="animation.png" class="my-website" alt="my-website">
+            </div>
+            <div class="pro-content">
+                <h1 class="text-white ml-2 mt-2 font-semibold text-xl">3D Model-Website</h1>
+
+                <p class="text-white p-2 text-[14px] opacity-80">A responsive e-commerce web application for mobile
+                    gadgets built with React.js, Tailwind CSS, and Redux. It features dynamic product listing, cart
+                    management using Local Storage, and a smooth, interactive UI for browsing, adding, and managing
+                    products. Frontend-only project with real-time state management and polished design.</p>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>tailwind css</span>
+                <span>JavaScript</span>
+            </div>
+            <div class="pro-btns">
+                <button class="one">
+                    <img src="external-link.png">
+                    <a href="https://technical0928.github.io/Hamid-ullah/" target="_blank">Live Demo</a>
+                </button>
+                <button class="two">
+                    <i class="fa-brands fa-github"></i>
+                    Code
+                </button>
+            </div>
+        </div>
+        <div class="project-card procard">
+            <div class="pro-picture">
+                <img src="calculator.png" class="my-website" alt="my-website">
+            </div>
+            <div class="pro-content">
+                <h1 class="text-white ml-2 mt-2 font-semibold text-xl">calculator App</h1>
+
+                <p class="text-white p-2 text-[14px] opacity-80">A responsive e-commerce web application for mobile
+                    gadgets built with React.js, Tailwind CSS, and Redux. It features dynamic product listing, cart
+                    management using Local Storage, and a smooth, interactive UI for browsing, adding, and managing
+                    products. Frontend-only project with real-time state management and polished design.</p>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>tailwind css</span>
+                <span>JavaScript</span>
+            </div>
+            <div class="pro-btns">
+                <button class="one">
+                    <img src="external-link.png">
+                    <a href="https://technical0928.github.io/calculator/" target="_blank">Live Demo</a>
+                </button>
+                <button class="two">
+                    <i class="fa-brands fa-github"></i>
+                    Code
+                </button>
+            </div>
+        </div>
+        <div class="project-card procard">
+            <div class="pro-picture">
+                <img src="my-website.png" class="my-website" alt="my-website">
+            </div>
+            <div class="pro-content">
+                <h1 class="text-white ml-2 mt-2 font-semibold text-xl">Feshion Website</h1>
+
+                <p class="text-white p-2 text-[14px] opacity-80">A responsive e-commerce web application for mobile
+                    gadgets built with React.js, Tailwind CSS, and Redux. It features dynamic product listing, cart
+                    management using Local Storage, and a smooth, interactive UI for browsing, adding, and managing
+                    products. Frontend-only project with real-time state management and polished design.</p>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>tailwind css</span>
+                <span>JavaScript</span>
+            </div>
+            <div class="pro-btns">
+                <button class="one">
+                    <img src="external-link.png">
+                    <a href="https://technical0928.github.io/Ecommerse-website/" target="_blank">Live Demo</a>
+                </button>
+                <button class="two">
+                    <i class="fa-brands fa-github"></i>
+                    Code
+                </button>
+            </div>
+        </div>
+        <div class="project-card procard">
+            <div class="pro-picture">
+                <img src="new-website.png" class="my-website" alt="my-website">
+            </div>
+            <div class="pro-content">
+                <h1 class="text-white ml-2 mt-2 font-semibold text-xl">Animation Website</h1>
+                <p class="text-white p-2 text-[14px] opacity-80">A responsive e-commerce web application for mobile
+                    gadgets built with React.js, Tailwind CSS, and Redux. It features dynamic product listing, cart
+                    management using Local Storage, and a smooth, interactive UI for browsing, adding, and managing
+                    products. Frontend-only project with real-time state management and polished design.</p>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>tailwind css</span>
+                <span>JavaScript</span>
+            </div>
+            <div class="pro-btns">
+                <button class="one">
+                    <img src="external-link.png">
+                    <a href="https://technical0928.github.io/My-Personal-Protofoio/" target="_blank">Live Demo</a>
+                </button>
+                <button class="two">
+                    <i class="fa-brands fa-github"></i>
+                    Code
+                </button>
+            </div>
+        </div>
+        <div class="project-card procard">
+            <div class="pro-picture">
+                <img src="todo-list.png" class="my-website" alt="my-website">
+            </div>
+            <div class="pro-content">
+                <h1 class="text-white ml-2 mt-2 font-semibold text-xl">Todo List</h1>
+                <p class="text-white p-2 text-[14px] opacity-80">A responsive e-commerce web application for mobile
+                    gadgets built with React.js, Tailwind CSS, and Redux. It features dynamic product listing, cart
+                    management using Local Storage, and a smooth, interactive UI for browsing, adding, and managing
+                    products. Frontend-only project with real-time state management and polished design.</p>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>tailwind css</span>
+                <span>JavaScript</span>
+            </div>
+            <div class="pro-btns">
+                <button class="one">
+                    <img src="external-link.png">
+                    <a href="https://technical0928.github.io/Tables-prints/">Live Demo</a>
+                </button>
+                <button class="two">
+
+                    <a href="https://github.com/technical0928/Tables-prints.git">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    Code
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- contact-section -->
+    <div class="text-center mt-12 px-2" id="contact">
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">Get In <span
+                class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">Touch</span></h2>
+        <div class="w-20 sm:w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-400 mx-auto mb-4 md:mb-6"></div>
+        <p class="text-gray-400 max-w-2xl mx-auto text-base sm:text-lg px-4">Ready to bring your next project to life?
+            Let's discuss how we can work together</p>
+    </div>
+    <!-- starting -->
+    <div class="contact-section-start">
+        <!-- 1st form -->
+        <div class="form-onee ">
+            <h2 class="text-2xl font-semibold text-white">Let's Connect</h2>
+            <p class="text-white opacity-50">Ready to work together? Get in touch for your next project or schedule a
+                consultation call. </p>
+            <div class="form-container flex gap-3 mt-2">
+                <div class="form-one-icon">
+                    <i class="fa-solid fa-envelope text-2xl text-[#307CF3] bg-[#1B335A]"></i>
+                </div>
+                <div class="form-one-location">
+                    <h2 class="">Email</h2>
+                    <span class=" text-[#307CF3]">techinalsothi@gmail.com</span>
+                    <p class="text-[12px] opacity-50">I'll respond within 2-4 hours</p>
+                </div>
+            </div>
+            <div class="form-container  flex gap-4 mt-2">
+                <div class="form-one-icon">
+                    <i class="fa-solid fa-phone text-2xl text-[#7BF19D] bg-[#124236]"></i>
+                </div>
+                <div class="form-one-location">
+                    <h2 class="">Email</h2>
+                    <span class=" text-[#7BF19D]">techinalsothi@gmail.com</span>
+                    <p class="text-[12px] opacity-50">I'll respond within 2-4 hours</p>
+                </div>
+            </div>
+            <div class="form-container  flex gap-4 mt-2">
+                <div class="form-one-icon">
+                    <i class="fa-solid fa-location-dot text-2xl text-[#C27AFF] bg-[#35285A]"></i>
+                </div>
+                <div class="form-one-location">
+                    <h2 class="">Email</h2>
+                    <span class="text-[#C27AFF]">techinalsothi@gmail.com</span>
+                    <p class="text-[12px] opacity-50">I'll respond within 2-4 hours</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2nd form-->
+        <form class="form-two form p-4 bg-[#172030] ">
+            <h2 class="text-white text-2xl font-semibold">Send a Message</h2>
+            <p class="text-white opacity-50">Fill out the form below and I'll get back to you as soon as possible.</p>
+            <div class="form-group nanaa flex gap-[60px]">
+                <div class="form-one">
+                    <label class="text-white opacity-80 text-[14px]">First Name*</label>
+                    <br>
+                    <input type="text" placeholder="First Name" class="" required>
+                </div>
+                <div class="form-two">
+                    <label class="text-white opacity-80 text-[14px]">Second Name*</label>
+                    <br>
+                    <input type="text" placeholder="Second Name" required>
+                </div>
+            </div>
+            <div class="form-group nan">
+                <label class="text-white opacity-80 text-[14px]">Email*</label>
+                <br>
+                <input type="email" placeholder="Email@example.com" required>
+            </div>
+            <div class="form-group nan">
+                <label class="text-white opacity-80 text-[14px]">Subject*</label>
+                <br>
+                <input type="email" placeholder="Enter your subject here..." required>
+            </div>
+            <div class="form-group nan">
+                <label class="text-white opacity-80 text-[14px]">Message*</label>
+
+                <textarea placeholder="Enter your message"
+                    class="h-[120px] mt-2 p-3 text-white bg-[#364153] rounded-md resize-none focus:outline-none focus:border-white"></textarea>
+            </div>
+            <button type="submit" class="mt-6 bg-gradient-to-r from-purple-500 to-indigo-600  py-3 rounded-lg text-white font-semibold hover:scale-105 transition-transform duration-300 cursor-pointer  sm:w-auto">
+                Submit
+            </button>
+        </form>
+    </div>
+
+    <!-- footer-section -->
+    <footer class="bg-[#0a0f1f] border-t border-gray-700 mt-20">
+        <div class="max-w-6xl mx-auto px-4 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <!-- about -->
+                <div>
+                    <h3 class="text-white text-lg font-semibold mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-circle-info text-indigo-400"></i>
+                        About
+                    </h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Frontend Developer passionate about creating
+                        beautiful and responsive web applications with modern technologies.</p>
+                </div>
+
+                <!-- skills -->
+                <div>
+                    <h3 class="text-white text-lg font-semibold mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-code text-indigo-400"></i>
+                        Skills
+                    </h3>
+                    <ul class="text-gray-400 text-sm space-y-2">
+                        <li>React.js</li>
+                        <li>HTML & CSS</li>
+                        <li>Tailwind CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+
+                <!-- projects -->
+                <div>
+                    <h3 class="text-white text-lg font-semibold mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-briefcase text-indigo-400"></i>
+                        Projects
+                    </h3>
+                    <ul class="text-gray-400 text-sm space-y-2">
+                        <li><a href="#project" class="hover:text-indigo-400 transition">E-Commerce App</a></li>
+                        <li><a href="#project" class="hover:text-indigo-400 transition">Portfolio</a></li>
+                        <li><a href="#project" class="hover:text-indigo-400 transition">Web Apps</a></li>
+                    </ul>
+                </div>
+
+                <!-- contact -->
+                <div>
+                    <h3 class="text-white text-lg font-semibold mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-envelope text-indigo-400"></i>
+                        Contact
+                    </h3>
+                    <div class="flex gap-4 text-xl">
+                        <a href="https://github.com/shahfahad22" target="_blank" rel="noopener noreferrer"
+                            class="text-gray-400 hover:text-indigo-400 transition">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/shah-fahad-4290a0251/?originalSubdomain=pk" target="_blank"
+                            rel="noopener noreferrer" class="text-gray-400 hover:text-indigo-400 transition">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="https://wa.me/03449762513" target="_blank" rel="noopener noreferrer"
+                            class="text-gray-400 hover:text-indigo-400 transition">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- footer Bottom -->
+            <div class="border-t border-gray-700 pt-8 text-center">
+                <p class="text-gray-400 text-sm">© 2024 Shah Fahad. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

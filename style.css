@@ -1,0 +1,426 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #08152b;
+    font-family: 'Poppins', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background: #08152b;
+}
+
+.logo h1 {
+    font-weight: 700;
+    color: #fff;
+}
+
+.menu ul {
+    display: flex;
+    gap: 20px;
+}
+
+.menu ul li {
+    position: relative;
+    padding: 10px 0px;
+    color: #ffffff;
+}
+
+.menu ul li a {
+    font-size: 1.2rem
+}
+
+.menu ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    background: #818cf8;
+    width: 0;
+    transition: all 0.6s ease;
+}
+
+.menu ul li a:hover {
+    color: #818cf8;
+    transition: all 0.6s ease
+}
+
+.menu ul li:hover::before {
+    width: 100%;
+
+}
+
+.nav-end {
+    display: flex;
+    align-items: center;
+}
+
+.nav-end img {
+    filter: invert(1)
+}
+
+.resume {
+    display: flex;
+
+    padding: 10px 20px;
+    color: #fff;
+}
+
+.resume img {
+    filter: invert(1)
+}
+
+#togl {
+    display: none;
+}
+
+@media (max-width:768px) {
+    .menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        background-color: #001a4d;
+    }
+
+
+    .menu ul {
+        flex-direction: column;
+    }
+
+    .menu.active {
+        display: block;
+    }
+
+    .menu ul li {
+        border-top: 1px solid rgba(200, 200, 200, 0.3);
+        padding: 15px 0;
+    }
+
+    #togl {
+        display: block;
+    }
+
+    .menu ul li::before {
+        display: none;
+    }
+
+    .nanaa {
+       
+        display: flex;
+        flex-direction: column;
+       
+    }
+    .nanaa input{
+        width:100%;
+    }
+    .nan input{
+        width: 100% !important;
+       
+    }
+       .contact-section-start {
+        grid-template-columns: 1fr;
+    }
+    
+}
+
+/* hero-section */
+.form-one,
+.form-two {
+    width:100%
+}
+
+.hero-section {
+    color: #fff;
+    margin-top: 8rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.hero-section-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.para-one {
+    max-width: 780px;
+
+}
+
+.para-two {
+    max-width: 780px;
+
+}
+
+
+/* skill-section */
+.skill-cards {
+
+    color: #fff;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    padding: 10px 30px;
+    gap: 20px;
+}
+
+.skills {
+    border: 1px solid #374151;
+    border-radius: 10px;
+    background: #171717
+}
+
+.inner-card {
+
+    height: 5rem;
+}
+
+/* percent */
+.percent {
+    width: 100%;
+    height: 0.6rem;
+
+    margin-top: 5px;
+    border-radius: 10px;
+    background-color: rgb(85, 86, 91);
+}
+
+.inner-percent {
+    height: 100%;
+    width: 95%;
+    background: #ff6a00;
+    border-radius: 10px;
+
+
+}
+
+.percent-content span {
+    color: rgb(166, 166, 166);
+
+}
+
+/* projects-cards */
+.projects-cards-section {
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-auto-rows: 550px;
+    gap: 20px;
+    margin-top: 2rem;
+}
+
+.procard {
+    border-radius: 10px;
+    border: 1px solid #374151;;
+    background:#1E2939;
+}
+
+.pro-picture {
+    height: 12rem;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+}
+
+.pro-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+
+
+.pro-picture:hover img {
+    transform: scale(1.05);
+}
+
+.pro-content {
+    padding: 0 10px
+}
+
+.pro-content span {
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 20px;
+    font-size: 13px;
+    color: #307CF3;
+    background-color: #2A3545;
+    opacity: 0.9;
+
+
+}
+
+.one {
+    display: flex;
+    gap: 10px;
+    background: #155BFA;
+}
+
+.one:hover {
+    background: #0950f6;
+
+}
+
+.pro-btns {
+    display: flex;
+    gap: 20px;
+    padding: 0 10px;
+    margin-top: 40px;
+    font-weight: 600;
+
+}
+
+.pro-btns button {
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+}
+
+.pro-btns button:hover {
+    transform: scale(1.02);
+}
+
+.pro-btns button img {
+    filter: invert(1);
+    height: 15px
+}
+
+.two {
+    display: flex;
+    gap: 10px
+}
+
+/* contact-section-start */
+.contact-section-start {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    padding: 1em;
+    gap: 20px;
+}
+
+
+
+/* form-container */
+.form-container {
+    border: 1px solid #122142;
+    border-radius: 10px;
+    padding: 0.7em;
+    background: #172030;
+
+
+}
+
+.form-onee {
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-one-icon .fa-solid {
+
+    padding: 0.7em 0.8em;
+    border-radius: 10px;
+
+
+
+}
+
+.form {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.form-container {
+    color: #fff
+}
+
+/* form-group */
+.form-group {
+    padding: 0.7em;
+}
+
+
+
+.form-group input {
+    border-radius: 5px;
+    border: none;
+    background-color: #364153;
+    color: #fff;
+    margin-top: 2px;
+    font-size: 14px;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.form-group textarea {
+    border-radius: 5px;
+    border: none;
+    background-color: #364153;
+    color: #fff;
+    margin-top: 2px;
+    font-size: 14px;
+    padding: 10px 20px;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    resize: vertical;
+}
+
+
+
+@media (max-width: 768px) {
+    .form-group input {
+        width: 100% !important;
+    }
+    
+    .form-group textarea {
+        width: 100% !important;
+    }
+}
+
+/* footer-section */
+footer {
+    background: #0a0f1f;
+}
+
+footer h3 {
+    color: #fff;
+}
+
+footer a {
+    transition: all 0.3s ease;
+}
+
+footer a:hover {
+    color: #818cf8;
+}
